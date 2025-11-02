@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kitty cat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/niam.css">
+</head>
+<div class="wrap">
+
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="index1.html">
+                    <img src="logo.svg" alt="friskay logo">
+                </a>
+                <div class="divider hide-mobile"></div>
+                <a href="#" class="home hide-mobile">Home</a>
+            </div>
+            <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="menu.svg" alt="open menu">
+                </a>
+                <ul>
+                    <li>
+                        <a href="#" class="menu-close">
+                            <img src="close.svg" alt="close-menu">
+                        </a>
+                    <li><a href="#">our food</a></li>
+                    <li><a href="#">ingredients</a></li>
+                    <li><a href="#">Studies</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Your cat will go <img src="bonkers.svg" alt="bonkers"></h1>
+            <p class="subhead" >..for the world’s best testing cat food, sourced with 
+                only the finest ingredients. Made with love from the 
+                heart of Mississippi.</p>
+            <a href="#" class="primary-cta">Get Bonkers</a>
+        </main>
+        <div class="cat-container">
+            <div class="cat">
+                <img src="cat.png" alt="cat illustration">
+                <div class="inner-circle"></div>
+                <div class="outer-circle"></div>
+            </div>
+        </div>
+</div>
+<script>
+     const menu = document.querySelector('nav ul');
+        const menuBtn = document.querySelector('.menu-open');
+        const closeBtn = document.querySelector('.menu-close');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.add('open')
+        })
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('open')
+        })
+</script>
+
+</body>
+
+</html>
